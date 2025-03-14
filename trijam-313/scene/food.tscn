@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bb3nr8kioxw3r"]
 
-[ext_resource type="Script" uid="uid://2j6syna8jo5g" path="res://script/food.gd" id="1_x4bxk"]
+[ext_resource type="Script" path="res://script/food.gd" id="1_x4bxk"]
 [ext_resource type="Texture2D" uid="uid://d2kemk43yaa41" path="res://asset/food_burger.png" id="2_vkmpk"]
 [ext_resource type="Texture2D" uid="uid://bv46gm8yewlmd" path="res://asset/food_fish.png" id="3_upor0"]
 [ext_resource type="Texture2D" uid="uid://blfpws6rnxvkb" path="res://asset/food_ame.png" id="4_x4bxk"]
@@ -34,7 +34,8 @@ position = Vector2(-4.5, -6)
 shape = SubResource("RectangleShape2D_vkmpk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(0.07, 0.07)
+z_index = 12
+scale = Vector2(0.04, 0.04)
 sprite_frames = SubResource("SpriteFrames_vkmpk")
 
 [connection signal="input_event" from="." to="." method="_on_input_event"]
