@@ -26,4 +26,6 @@ func decrement() :
 func _on_monstre_food() -> void:
 	increment()
 
+func _on_monstre_bad() -> void:
+	decrement()
 	
