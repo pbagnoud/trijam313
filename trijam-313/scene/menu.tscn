@@ -1,24 +1,38 @@
-[gd_scene load_steps=3 format=3 uid="uid://cd64y33187vn3"]
+[gd_scene load_steps=6 format=3 uid="uid://dulgmkdlpxnoy"]
 
 [ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
 [ext_resource type="Texture2D" uid="uid://btp1l240u2ro3" path="res://asset/Monster_sprite.png" id="2_8hxod"]
+[ext_resource type="FontFile" uid="uid://drs705ln8qrah" path="res://asset/Eater-Regular.ttf" id="2_rgvae"]
+
+[sub_resource type="Theme" id="Theme_rgvae"]
+default_font = ExtResource("2_rgvae")
+default_font_size = 40
+
+[sub_resource type="Theme" id="Theme_n5gji"]
+default_font = ExtResource("2_rgvae")
+default_font_size = 30
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_e5g8k")
 
 [node name="Button_start" type="Button" parent="."]
-offset_left = 108.0
-offset_top = 268.0
-offset_right = 616.0
-offset_bottom = 401.0
+z_index = 1
+offset_left = 103.0
+offset_top = 120.0
+offset_right = 611.0
+offset_bottom = 253.0
+theme = SubResource("Theme_rgvae")
+text = "Start"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Button_start"]
 layout_mode = 0
-offset_left = 221.0
-offset_top = 56.0
-offset_right = 278.0
-offset_bottom = 86.0
-text = "START"
+offset_left = 18.0
+offset_top = 185.0
+offset_right = 497.0
+offset_bottom = 480.0
+theme = SubResource("Theme_n5gji")
+text = "The Elder God is hungry... for souls, not for puny human's food !
+Click on bad food items to destroy them."
 horizontal_alignment = 1
 vertical_alignment = 1
 
