@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cw3er8578g1s1" path="res://scene/monstre.tscn" id="2_brvut"]
 [ext_resource type="PackedScene" uid="uid://b2s7my55v822f" path="res://scene/score.tscn" id="3_0ha60"]
 [ext_resource type="PackedScene" path="res://scene/Tapis_map.tscn" id="4_brvut"]
-[ext_resource type="PackedScene" path="res://scene/Background.tscn" id="5_0ha60"]
+[ext_resource type="PackedScene" uid="uid://l1yxdw800qrx" path="res://scene/Background.tscn" id="5_0ha60"]
 
 [node name="Main" type="Node2D"]
 

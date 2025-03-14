@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://nncuahfd70ei"]
+
+[ext_resource type="Texture2D" uid="uid://48hrlml5awpg" path="res://asset/Conveyor belt/Conveyor_1.PNG" id="1_rx7gj"]
+[ext_resource type="Texture2D" uid="uid://deoi5vyhudbca" path="res://asset/Conveyor belt/Conveyor_2.PNG" id="2_k1sxa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4enfl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rx7gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_k1sxa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Tapis_map_moving" type="Node2D"]
+
+[node name="Conveyor" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4enfl")
+frame_progress = 0.463801
