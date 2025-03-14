@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://bb3nr8kioxw3r"]
 
-[ext_resource type="Script" path="res://scene/food.gd" id="1_a5fiw"]
+[ext_resource type="Script" uid="uid://2j6syna8jo5g" path="res://script/food.gd" id="1_x4bxk"]
 [ext_resource type="Texture2D" uid="uid://d2kemk43yaa41" path="res://asset/food_burger.png" id="2_vkmpk"]
-[ext_resource type="Texture2D" uid="uid://chvxpgfhel0ef" path="res://asset/food_fish.png" id="3_upor0"]
+[ext_resource type="Texture2D" uid="uid://bv46gm8yewlmd" path="res://asset/food_fish.png" id="3_upor0"]
 [ext_resource type="Texture2D" uid="uid://blfpws6rnxvkb" path="res://asset/food_ame.png" id="4_x4bxk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkmpk"]
@@ -27,7 +27,7 @@ animations = [{
 
 [node name="food" type="CharacterBody2D" groups=["food"]]
 input_pickable = true
-script = ExtResource("1_a5fiw")
+script = ExtResource("1_x4bxk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, -6)
