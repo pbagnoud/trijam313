@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://blspvol823uid" path="res://scene/tapis.tscn" id="1_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://cw3er8578g1s1" path="res://scene/monstre.tscn" id="2_brvut"]
 [ext_resource type="PackedScene" uid="uid://b2s7my55v822f" path="res://scene/score.tscn" id="3_0ha60"]
-[ext_resource type="PackedScene" uid="uid://dv7dwupe2jc12" path="res://scene/Tapis_map.tscn" id="4_brvut"]
+[ext_resource type="PackedScene" path="res://scene/Tapis_map.tscn" id="4_brvut"]
 [ext_resource type="PackedScene" path="res://scene/Background.tscn" id="5_0ha60"]
 
 [node name="Main" type="Node2D"]
@@ -31,6 +31,7 @@ size_flags_vertical = 8
 
 [node name="Background" parent="." instance=ExtResource("5_0ha60")]
 
+[connection signal="bad" from="Monstre" to="score" method="_on_monstre_bad"]
 [connection signal="food" from="Monstre" to="score" method="_on_monstre_food"]
 [connection signal="up_difficulty" from="score" to="Tapis" method="_on_score_up_difficulty"]
 [connection signal="up_difficulty" from="score" to="Tapis2" method="_on_score_up_difficulty"]
