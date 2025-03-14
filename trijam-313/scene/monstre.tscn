@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://cw3er8578g1s1"]
+[gd_scene load_steps=6 format=3 uid="uid://cw3er8578g1s1"]
 
 [ext_resource type="Script" uid="uid://c3aya6c0clufx" path="res://script/monstre.gd" id="1_4hh5b"]
 [ext_resource type="Script" uid="uid://cm3oubcrxah7m" path="res://script/bouche.gd" id="1_ibvck"]
-[ext_resource type="Texture2D" uid="uid://cqwp2ng0vmsop" path="res://asset/Monster_sprite.png" id="2_4hh5b"]
+[ext_resource type="Texture2D" uid="uid://cbooalscblu2c" path="res://asset/Monster_sprite - front.png" id="3_ukwgj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ibvck"]
 size = Vector2(117, 731)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4hh5b"]
+load_path = "res://.godot/imported/Monster_sprite.png-fea5fa2f57cca08ea22384db95fb7d54.ctex"
 
 [node name="Monstre" type="Node2D"]
 script = ExtResource("1_4hh5b")
@@ -17,10 +20,17 @@ script = ExtResource("1_ibvck")
 position = Vector2(890, 337)
 shape = SubResource("RectangleShape2D_ibvck")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(916, 323)
-scale = Vector2(0.178743, 0.203085)
-texture = ExtResource("2_4hh5b")
+[node name="Backgroud_monster_sprite" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(943.746, 323.005)
+scale = Vector2(0.287358, 0.322261)
+texture = SubResource("CompressedTexture2D_4hh5b")
+
+[node name="Front_monster_sprite" type="Sprite2D" parent="."]
+z_index = 5
+position = Vector2(1060, 322)
+scale = Vector2(0.287358, 0.322261)
+texture = ExtResource("3_ukwgj")
 
 [connection signal="body_entered" from="bouche" to="." method="_on_bouche_body_entered"]
 [connection signal="body_entered" from="bouche" to="bouche" method="_on_body_entered"]
