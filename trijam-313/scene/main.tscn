@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://dosllm334jq70"]
+[gd_scene load_steps=7 format=3 uid="uid://dosllm334jq70"]
 
+[ext_resource type="AudioStream" uid="uid://dyqh1ykf2duad" path="res://asset/normal-track.wav" id="1_4j5ol"]
 [ext_resource type="PackedScene" uid="uid://blspvol823uid" path="res://scene/tapis.tscn" id="1_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://cw3er8578g1s1" path="res://scene/monstre.tscn" id="2_brvut"]
 [ext_resource type="PackedScene" uid="uid://b2s7my55v822f" path="res://scene/score.tscn" id="3_0ha60"]
@@ -7,6 +8,10 @@
 [ext_resource type="PackedScene" uid="uid://l1yxdw800qrx" path="res://scene/Background.tscn" id="5_0ha60"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Normal-track" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_4j5ol")
+autoplay = true
 
 [node name="Tapis" parent="." instance=ExtResource("1_wp4xf")]
 position = Vector2(2, 163)
