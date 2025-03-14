@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://chlbtayacfci7"]
+[gd_scene load_steps=3 format=3 uid="uid://dpb4hrkmf57o7"]
 
 [ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
 [ext_resource type="Texture2D" uid="uid://cqwp2ng0vmsop" path="res://asset/Monster_sprite.png" id="2_8hxod"]
@@ -31,3 +31,4 @@ texture = ExtResource("2_8hxod")
 expand_mode = 1
 
 [connection signal="pressed" from="Button_start" to="." method="_on_start_pressed"]
+
