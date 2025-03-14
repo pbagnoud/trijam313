@@ -1,3 +1,5 @@
 [gd_scene format=3 uid="uid://bb3nr8kioxw3r"]
 
 [node name="food" type="RigidBody2D"]
+
+[node name="sprite" type="Sprite2D" parent="."]
