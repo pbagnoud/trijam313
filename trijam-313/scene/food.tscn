@@ -1,5 +1,18 @@
-[gd_scene format=3 uid="uid://bb3nr8kioxw3r"]
+[gd_scene load_steps=4 format=3 uid="uid://bb3nr8kioxw3r"]
 
-[node name="food" type="RigidBody2D"]
+[ext_resource type="Script" uid="uid://2j6syna8jo5g" path="res://scene/food.gd" id="1_a5fiw"]
+[ext_resource type="Texture2D" uid="uid://dl4jyy33qja34" path="res://asset/food_burger.jpg" id="2_vkmpk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkmpk"]
+size = Vector2(99, 82)
+
+[node name="food" type="CharacterBody2D" groups=["food"]]
+script = ExtResource("1_a5fiw")
 
 [node name="sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("2_vkmpk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.5, -6)
+shape = SubResource("RectangleShape2D_vkmpk")
