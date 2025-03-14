@@ -5,7 +5,7 @@ var speed = 300
 @export var food_id = 0
 
 func _ready() -> void:
-	food_id = randi() % 2
+	food_id = randi() % 3
 	animated_sprite_2d.frame = food_id
 func _process(delta):
 	position.x += speed*delta
