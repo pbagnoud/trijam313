@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="trijam 313"
+run/main_scene="uid://dosllm334jq70"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://asset/icon.svg"
