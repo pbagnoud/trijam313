@@ -1,5 +1,8 @@
-[gd_scene format=3 uid="uid://bb3nr8kioxw3r"]
+[gd_scene load_steps=2 format=3 uid="uid://bb3nr8kioxw3r"]
+
+[ext_resource type="Script" uid="uid://2j6syna8jo5g" path="res://scene/food.gd" id="1_a5fiw"]
 
 [node name="food" type="RigidBody2D"]
+script = ExtResource("1_a5fiw")
 
 [node name="sprite" type="Sprite2D" parent="."]
