@@ -12,7 +12,7 @@
 
 [node name="Normal-track" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("1_4j5ol")
-volume_db = -8.254
+volume_db = -13.025
 autoplay = true
 script = ExtResource("2_p1hux")
 
