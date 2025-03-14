@@ -1,11 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://cw3er8578g1s1"]
+[gd_scene load_steps=3 format=3 uid="uid://cw3er8578g1s1"]
 
 [ext_resource type="Script" uid="uid://cm3oubcrxah7m" path="res://script/bouche.gd" id="1_ibvck"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ibvck"]
+size = Vector2(117, 731)
 
 [node name="Monstre" type="Node2D"]
 
 [node name="bouche" type="Area2D" parent="."]
 script = ExtResource("1_ibvck")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bouche"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_ibvck")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
