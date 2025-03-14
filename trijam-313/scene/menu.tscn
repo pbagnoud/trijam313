@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd64y33187vn3"]
+[gd_scene load_steps=6 format=3 uid="uid://dulgmkdlpxnoy"]
 
 [ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
 [ext_resource type="Texture2D" uid="uid://btp1l240u2ro3" path="res://asset/Monster_sprite.png" id="2_8hxod"]
