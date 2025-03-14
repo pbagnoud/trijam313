@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw3er8578g1s1"]
+
+[ext_resource type="Script" uid="uid://cm3oubcrxah7m" path="res://script/bouche.gd" id="1_ibvck"]
+
+[node name="Monstre" type="Node2D"]
+
+[node name="bouche" type="Area2D" parent="."]
+script = ExtResource("1_ibvck")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="body_entered" from="bouche" to="bouche" method="_on_body_entered"]
