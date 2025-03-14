@@ -33,5 +33,3 @@ size_flags_vertical = 8
 
 [connection signal="food" from="Monstre" to="score" method="_on_monstre_food"]
 [connection signal="up_difficulty" from="score" to="Tapis" method="_on_score_up_difficulty"]
-[connection signal="up_difficulty" from="score" to="Tapis2" method="_on_score_up_difficulty"]
-[connection signal="up_difficulty" from="score" to="Tapis3" method="_on_score_up_difficulty"]
