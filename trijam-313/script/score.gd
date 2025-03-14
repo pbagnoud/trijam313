@@ -9,7 +9,12 @@ func increment() :
 	score_text.text = "Score : " + str(value)
 	
 	
+func decrement() :
+	value -= 1
+	score_text.text = "Score : " + str(value)
 
 
 func _on_monstre_food() -> void:
 	increment()
+
+	
