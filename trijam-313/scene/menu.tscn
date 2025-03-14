@@ -1,3 +1,5 @@
+
+
 [gd_scene load_steps=3 format=3 uid="uid://bnruurqknb6ke"]
 
 [ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
@@ -31,3 +33,4 @@ texture = ExtResource("2_8hxod")
 expand_mode = 1
 
 [connection signal="pressed" from="Button_start" to="." method="_on_start_pressed"]
+
