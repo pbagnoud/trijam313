@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://snayupkm30qj"]
+
+[ext_resource type="Texture2D" uid="uid://g0ypw0hu0dg4" path="res://asset/Conveyor belt/Conveyor_3.PNG" id="1_y8r8d"]
+
+[node name="End tapis" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10.75, 54.75)
+scale = Vector2(0.167, 0.15)
+texture = ExtResource("1_y8r8d")
