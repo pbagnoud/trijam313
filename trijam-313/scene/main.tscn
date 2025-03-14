@@ -8,13 +8,13 @@
 [node name="Main" type="Node2D"]
 
 [node name="Tapis" parent="." instance=ExtResource("1_wp4xf")]
-position = Vector2(-1, 106)
+position = Vector2(2, 163)
 
 [node name="Tapis2" parent="." instance=ExtResource("1_wp4xf")]
-position = Vector2(-1, 342)
+position = Vector2(1, 309)
 
 [node name="Tapis3" parent="." instance=ExtResource("1_wp4xf")]
-position = Vector2(-1, 562)
+position = Vector2(-1, 446)
 
 [node name="Monstre" parent="." instance=ExtResource("2_brvut")]
 position = Vector2(-1, -9)
