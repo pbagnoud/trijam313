@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3aya6c0clufx" path="res://script/monstre.gd" id="1_4hh5b"]
 [ext_resource type="Script" uid="uid://cm3oubcrxah7m" path="res://script/bouche.gd" id="1_ibvck"]
+[ext_resource type="Texture2D" uid="uid://cqwp2ng0vmsop" path="res://asset/Monster_sprite.png" id="2_4hh5b"]
 
 [node name="Monstre" type="Node2D"]
 script = ExtResource("1_4hh5b")
@@ -10,6 +11,9 @@ script = ExtResource("1_4hh5b")
 script = ExtResource("1_ibvck")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(916, 323)
+scale = Vector2(0.178743, 0.203085)
+texture = ExtResource("2_4hh5b")
 
 [connection signal="body_entered" from="bouche" to="." method="_on_bouche_body_entered"]
 [connection signal="body_entered" from="bouche" to="bouche" method="_on_body_entered"]
