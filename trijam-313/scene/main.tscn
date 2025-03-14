@@ -17,25 +17,16 @@ autoplay = true
 script = ExtResource("2_p1hux")
 
 [node name="Tapis" parent="." instance=ExtResource("1_wp4xf")]
+z_index = 12
 position = Vector2(2, 163)
 
 [node name="Tapis2" parent="." instance=ExtResource("1_wp4xf")]
+z_index = 12
 position = Vector2(1, 309)
 
 [node name="Tapis3" parent="." instance=ExtResource("1_wp4xf")]
+z_index = 12
 position = Vector2(-1, 446)
-
-[node name="Monstre" parent="." instance=ExtResource("2_brvut")]
-position = Vector2(-1, -9)
-
-[node name="score" parent="." instance=ExtResource("3_0ha60")]
-offset_left = 366.0
-offset_top = 12.0
-offset_right = 366.0
-offset_bottom = 12.0
-size_flags_vertical = 8
-
-[node name="Background" parent="." instance=ExtResource("5_0ha60")]
 
 [node name="Tapis5" type="Node" parent="."]
 
@@ -64,9 +55,11 @@ position = Vector2(453, 121)
 position = Vector2(538, 120)
 
 [node name="Tapis_map_moving9" parent="Tapis5" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(625, 119)
 
 [node name="Tapis_map_moving10" parent="Tapis5" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(715, 118)
 
 [node name="Tapis4" type="Node" parent="."]
@@ -99,6 +92,7 @@ position = Vector2(555, 263)
 position = Vector2(641, 262)
 
 [node name="Tapis_map_moving10" parent="Tapis4" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(724, 263)
 
 [node name="Tapis6" type="Node" parent="."]
@@ -125,13 +119,28 @@ position = Vector2(391, 391)
 position = Vector2(482, 393)
 
 [node name="Tapis_map_moving8" parent="Tapis6" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(570, 393)
 
 [node name="Tapis_map_moving9" parent="Tapis6" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(657, 391)
 
 [node name="Tapis_map_moving10" parent="Tapis6" instance=ExtResource("8_of57s")]
+z_index = 10
 position = Vector2(734, 392)
+
+[node name="Monstre" parent="." instance=ExtResource("2_brvut")]
+position = Vector2(-1, -9)
+
+[node name="score" parent="." instance=ExtResource("3_0ha60")]
+offset_left = 366.0
+offset_top = 12.0
+offset_right = 366.0
+offset_bottom = 12.0
+size_flags_vertical = 8
+
+[node name="Background" parent="." instance=ExtResource("5_0ha60")]
 
 [connection signal="bad" from="Monstre" to="score" method="_on_monstre_bad"]
 [connection signal="food" from="Monstre" to="score" method="_on_monstre_food"]

@@ -20,6 +20,7 @@ animations = [{
 [node name="Tapis_map_moving" type="Node2D"]
 
 [node name="Conveyor" type="AnimatedSprite2D" parent="."]
+z_index = 10
 position = Vector2(67.8125, 110.476)
 scale = Vector2(0.195533, 0.188064)
 sprite_frames = SubResource("SpriteFrames_4enfl")
