@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dosllm334jq70"]
+[gd_scene load_steps=5 format=3 uid="uid://dosllm334jq70"]
 
 [ext_resource type="PackedScene" uid="uid://blspvol823uid" path="res://scene/tapis.tscn" id="1_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://cw3er8578g1s1" path="res://scene/monstre.tscn" id="2_brvut"]
 [ext_resource type="PackedScene" uid="uid://b2s7my55v822f" path="res://scene/score.tscn" id="3_0ha60"]
+[ext_resource type="PackedScene" uid="uid://dv7dwupe2jc12" path="res://scene/Tapis_map.tscn" id="4_brvut"]
 
 [node name="Main" type="Node2D"]
 
@@ -24,3 +25,5 @@ offset_top = 572.0
 offset_right = 560.0
 offset_bottom = 572.0
 size_flags_vertical = 8
+
+[node name="TapisMap" parent="." instance=ExtResource("4_brvut")]
