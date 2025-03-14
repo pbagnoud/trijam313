@@ -1,7 +1,6 @@
 extends Control
 
 signal up_difficulty
-signal stop_game
 
 var limit1 : int = 15
 var limit2 : int = 30
