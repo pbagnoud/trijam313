@@ -1,33 +1,3 @@
-[gd_scene load_steps=3 format=3 uid="uid://chlbtayacfci7"]
+[gd_scene format=3 uid="uid://b1efmpawmm0gd"]
 
-[ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
-[ext_resource type="Texture2D" uid="uid://cqwp2ng0vmsop" path="res://asset/Monster_sprite.png" id="2_8hxod"]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_e5g8k")
-
-[node name="Button_start" type="Button" parent="."]
-offset_left = 108.0
-offset_top = 268.0
-offset_right = 616.0
-offset_bottom = 401.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="Button_start"]
-layout_mode = 0
-offset_left = 221.0
-offset_top = 56.0
-offset_right = 278.0
-offset_bottom = 86.0
-text = "START"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 691.0
-offset_top = 1.0
-offset_right = 1152.0
-offset_bottom = 645.0
-texture = ExtResource("2_8hxod")
-expand_mode = 1
-
-[connection signal="pressed" from="Button_start" to="." method="_on_start_pressed"]
+[node name="Menu" type="Node2D"]
