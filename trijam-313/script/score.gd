@@ -18,7 +18,12 @@ func increment() :
 		up_difficulty.emit()
 	
 	
+func decrement() :
+	value -= 1
+	score_text.text = "Score : " + str(value)
 
 
 func _on_monstre_food() -> void:
 	increment()
+
+	
