@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://chlbtayacfci7"]
 
-[ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
+[ext_resource type="Script" path="res://script/menu.gd" id="1_e5g8k"]
 [ext_resource type="Texture2D" uid="uid://cqwp2ng0vmsop" path="res://asset/Monster_sprite.png" id="2_8hxod"]
 
 [node name="Node2D" type="Node2D"]
