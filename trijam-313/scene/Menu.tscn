@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cd64y33187vn3"]
+[gd_scene load_steps=8 format=3 uid="uid://cd64y33187vn3"]
 
 [ext_resource type="Script" uid="uid://eytta2usx4gq" path="res://script/menu.gd" id="1_e5g8k"]
 [ext_resource type="Texture2D" uid="uid://btp1l240u2ro3" path="res://asset/Monster_sprite.png" id="2_8hxod"]
 [ext_resource type="FontFile" uid="uid://drs705ln8qrah" path="res://asset/Eater-Regular.ttf" id="2_rgvae"]
+[ext_resource type="Texture2D" uid="uid://ddbmyaa8muu5a" path="res://asset/Background_clouds.PNG" id="3_xs5te"]
+[ext_resource type="Texture2D" uid="uid://bwytxs60ef8hc" path="res://asset/Background_menu.PNG" id="5_vi6sp"]
 
 [sub_resource type="Theme" id="Theme_rgvae"]
 default_font = ExtResource("2_rgvae")
@@ -15,10 +17,39 @@ default_font_size = 30
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_e5g8k")
 
+[node name="TextureRect2_background" type="TextureRect" parent="."]
+offset_left = 5.0
+offset_top = -1.0
+offset_right = 2053.0
+offset_bottom = 2047.0
+texture = ExtResource("3_xs5te")
+stretch_mode = 1
+
+[node name="TextureRect_monstre" type="TextureRect" parent="."]
+offset_left = 691.0
+offset_top = 1.0
+offset_right = 1152.0
+offset_bottom = 645.0
+texture = ExtResource("2_8hxod")
+expand_mode = 1
+
+[node name="TextureRect_buttonstart" type="TextureRect" parent="."]
+anchors_preset = -1
+anchor_left = 0.106
+anchor_top = 0.203
+anchor_right = 0.106
+anchor_bottom = 0.203
+offset_left = 99.0
+offset_top = 113.0
+offset_right = 615.0
+offset_bottom = 253.0
+texture = ExtResource("5_vi6sp")
+expand_mode = 1
+
 [node name="Button_start" type="Button" parent="."]
 z_index = 1
-offset_left = 103.0
-offset_top = 120.0
+offset_left = 100.0
+offset_top = 114.0
 offset_right = 611.0
 offset_bottom = 253.0
 theme = SubResource("Theme_rgvae")
@@ -35,13 +66,5 @@ text = "The Elder God is hungry... for souls, not for puny human's food !
 Click on bad food items to destroy them."
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="TextureRect" type="TextureRect" parent="."]
-offset_left = 691.0
-offset_top = 1.0
-offset_right = 1152.0
-offset_bottom = 645.0
-texture = ExtResource("2_8hxod")
-expand_mode = 1
 
 [connection signal="pressed" from="Button_start" to="." method="_on_start_pressed"]
