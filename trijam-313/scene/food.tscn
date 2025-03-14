@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bb3nr8kioxw3r"]
+[gd_scene load_steps=6 format=3 uid="uid://bb3nr8kioxw3r"]
 
 [ext_resource type="Script" uid="uid://2j6syna8jo5g" path="res://scene/food.gd" id="1_a5fiw"]
-[ext_resource type="Texture2D" uid="uid://cryua8juiewwx" path="res://asset/food_burger.png" id="2_vkmpk"]
+[ext_resource type="Texture2D" uid="uid://d2kemk43yaa41" path="res://asset/food_burger.png" id="2_vkmpk"]
+[ext_resource type="Texture2D" uid="uid://dimrd6n422h2d" path="res://asset/food_fish.png" id="3_upor0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vkmpk"]
 size = Vector2(99, 82)
@@ -11,6 +12,9 @@ animations = [{
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_vkmpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_upor0")
 }],
 "loop": true,
 "name": &"default",
