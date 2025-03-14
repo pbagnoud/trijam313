@@ -14,7 +14,7 @@ script = ExtResource("1_4hh5b")
 script = ExtResource("1_ibvck")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bouche"]
-position = Vector2(-1, 1)
+position = Vector2(890, 337)
 shape = SubResource("RectangleShape2D_ibvck")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
