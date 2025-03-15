@@ -3,9 +3,9 @@
 [ext_resource type="AudioStream" uid="uid://depeei8lrkqt7" path="res://asset/normal-track.wav" id="1_4j5ol"]
 [ext_resource type="PackedScene" uid="uid://blspvol823uid" path="res://scene/tapis.tscn" id="1_wp4xf"]
 [ext_resource type="PackedScene" uid="uid://cw3er8578g1s1" path="res://scene/monstre.tscn" id="2_brvut"]
-[ext_resource type="Script" path="res://script/normal_track.gd" id="2_p1hux"]
+[ext_resource type="Script" uid="uid://bkslqjxkss701" path="res://script/normal_track.gd" id="2_p1hux"]
 [ext_resource type="PackedScene" uid="uid://b2s7my55v822f" path="res://scene/score.tscn" id="3_0ha60"]
-[ext_resource type="PackedScene" uid="uid://l1yxdw800qrx" path="res://scene/Background.tscn" id="5_0ha60"]
+[ext_resource type="PackedScene" path="res://scene/Background.tscn" id="5_0ha60"]
 [ext_resource type="PackedScene" uid="uid://nncuahfd70ei" path="res://scene/tapis_map_moving.tscn" id="8_of57s"]
 
 [node name="Main" type="Node2D"]
